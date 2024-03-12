@@ -5,7 +5,11 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <Greet></Greet>
+      <Greet name = "nadim">
+        <p>this is a children</p>
+      </Greet>
+      <Greet name = "wasim"></Greet>
+      <Greet name = "salim"></Greet>
       <Welcome></Welcome>
     </div>
   );
