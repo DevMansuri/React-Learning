@@ -10,7 +10,7 @@ function App() {
       </Greet>
       <Greet name = "wasim"></Greet>
       <Greet name = "salim"></Greet>
-      <Welcome></Welcome>
+      <Welcome name = "addu"></Welcome>
     </div>
   );
 }
