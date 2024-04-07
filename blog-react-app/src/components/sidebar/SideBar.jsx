@@ -1,5 +1,6 @@
 import React from 'react'
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 const SideBar = () => {
   return (
@@ -19,40 +20,40 @@ const SideBar = () => {
       <span className="sidebarTitle">CATEGORIES</span>
       <ul className="sidebarList">
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Life">
-            
-          </Link> */}
-          Life
+          <Link className="link" to="/posts?cat=Life">
+            Life       
+          </Link>
+     
         </li>
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Music">
-            
-          </Link> */}
-          Music
-        </li>
+          <Link className="link" to="/posts?cat=Music">
+            Music
+  
+          </Link>
+                  </li>
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Sport">
+          <Link className="link" to="/posts?cat=Sport">
+            Sport
+          </Link>
            
-          </Link> */}
-           Sport
         </li>
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Style">
-            
-          </Link> */}
-          Style
+          <Link className="link" to="/posts?cat=Style">
+          Style  
+          </Link>
+          
         </li>
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Tech">
-            
-          </Link> */}
-          Tech
+          <Link className="link" to="/posts?cat=Tech">
+            Tech  
+          </Link>
+          
         </li>
         <li className="sidebarListItem">
-          {/* <Link className="link" to="/posts?cat=Cinema">
-            
-          </Link> */}
-          Cinema
+          <Link className="link" to="/posts?cat=Cinema">
+            Cinema  
+          </Link>
+          
         </li>
       </ul>
     </div>
