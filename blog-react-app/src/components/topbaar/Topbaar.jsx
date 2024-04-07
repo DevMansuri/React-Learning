@@ -1,7 +1,10 @@
 import React from 'react'
 import './topbaar.css'
+import { Link } from 'react-router-dom'
 
 const Topbaar = () => {
+  const user = false;
+   
   return (
     <div className='top'>
         <div className='topLeft'>
@@ -12,11 +15,11 @@ const Topbaar = () => {
     </div>
         <div className='topCenter'>
             <ul className='topList'>
-                <li className='topListItem'>HOME</li>
+                <li className='topListItem'><Link className='link' to='/'>HOME</Link></li>
                 <li className='topListItem'>ABOUT</li>
                 <li className='topListItem'>CONTACT</li>
-                <li className='topListItem'>WRITE</li>
-                <li className='topListItem'>LOGOUT</li>
+                <li className='topListItem'><Link className='link' to='/'>WRITE</Link></li>
+                <li className='topListItem'>{user && "LOGOUT"}</li>
 
             </ul>
         </div>
