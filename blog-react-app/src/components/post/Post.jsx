@@ -1,7 +1,8 @@
 import React from 'react'
 import "./post.css";
+import { Link } from 'react-router-dom';
 
-const Post = ({img}) => {
+const Post = ({img}) => {    
   return (
     <div className="post">
     <img
@@ -12,23 +13,23 @@ const Post = ({img}) => {
     <div className="postInfo">
       <div className="postCats">
         <span className="postCat">
-          {/* <Link className="link" to="/posts?cat=Music">
-            
-          </Link> */}
-          Music
+          <Link className="link" to="/posts?cat=Music">
+            Music  
+          </Link>
+          
         </span>
         <span className="postCat">
-          {/* <Link className="link" to="/posts?cat=Music">
-            
-          </Link> */}
-          Life
+          <Link className="link" to="/posts?cat=Music">
+            Life  
+          </Link>
+          
         </span>
       </div>
       <span className="postTitle">
-        {/* <Link to="/post/abc" className="link">
-          
-        </Link> */}
-        Lorem ipsum dolor sit amet
+        <Link to="/post/abc" className="link">
+        Lorem ipsum dolor sit amet   
+        </Link>
+       
       </span>
       <hr />
       <span className="postDate">1 hour ago</span>
